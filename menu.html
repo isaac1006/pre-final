@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MENU</title>
+
+</head>
+
+<body>
+   <h2>Bienvenido eliga que desea buscar</h2>
+<nav>
+    
+<ul>
+    <li><a href="#formulario-clientes">Formulario Clientes</a></li>
+    <li><a href="formulario_productos.html">Formulario Productos</a></li>
+    <li><a href="formulario_compra.php">REGISTAR COMPRA</a></li>
+
+</ul>
+
+ 
+
+</nav>
+
+ 
+
+   
+
+</body>
+
+</html>
+
+ cliente //////////////////////////////////
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CLIENTES</title>
+
+</head>
+
+<body>
+
+ 
+
+<h1 id="formulario-clientes">FORMULARIO CLIENTES</h1>
+
+<form action="clientes.php" method="post">
+
+    <label for="nombre_cliente">nombre cliente</label>
+     <input type="text" name="nombre_cliente" required><br>
+
+    <label for="email_cliente">mail cliente</label>
+    <input type="email" name="email_cliente" required><br>
+
+    <label for="telefono">Telefono cliente</label>
+    <input type="number" name="telefono_cliente" required><br>
+
+    <label for="direccion_cliente">direccion cliente</label>
+    <input type="text" name="direccion_cliente" required><br>
+
+    <label for="fecha">fecha de registro</label>
+    <input type="date" name="fecha_registro" required><br>
+
+    <button type="submit">GUARDAR</button>
+
+</form>
+<hr>
+<h2>Formulario de productos</h2>
+    <form action="procesa_productos.php" method="post">
+        <label for="nombre_producto">Nombre del Producto:</label><br>
+        <input type="text" id="nombre_producto" name="nombre_producto" required><br>
+
+        <label for="descripcion_producto">Descripción del Producto:</label><br>
+        <textarea id="descripcion_producto" name="descripcion_producto" rows="4" cols="50" required></textarea><br>
+
+        <label for="precio_producto">Precio del Producto:</label><br>
+        <input type="number" id="precio_producto" name="precio_producto" step="0.01" required><br>
+
+        <label for="stock_producto">Stock del Producto:</label><br>
+        <input type="number" id="stock_producto" name="stock_producto" required><br>
+
+        <label for="categoria_producto">Categoría del Producto:</label><br>
+        <input type="text" id="categoria_producto" name="categoria_producto" required><br>
+
+        <input type="submit" value="Guardar Producto">
+    </form>
+    <hr>
+    <h2>Formulario de Compra</h2>
+    <form action="registrar_compra.php" method="post">
+        <label for="id_cliente">Cliente:</label>
+        <select id="id_cliente" name="id_cliente" required>
+            <!-- Aquí deberías cargar dinámicamente los clientes desde la base de datos -->
+            <option value="1">Cliente 1</option>
+            <option value="2">Cliente 2</option>
+            <!-- Agrega más opciones según tus clientes -->
+        </select><br>
+
+        <label for="id_producto">Producto:</label>
+        <select id="id_producto" name="id_producto" required>
+            <!-- Aquí deberías cargar dinámicamente los productos desde la base de datos -->
+            <option value="1">Producto 1</option>
+            <option value="2">Producto 2</option>
+            <!-- Agrega más opciones según tus productos -->
+        </select><br>
+
+        <button type="submit">Registrar Compra</button>
+    </form>
+   
+
+</body>
+
+</html>
