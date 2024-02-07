@@ -1,5 +1,8 @@
+styles.css
+
 /* Estilos generales */
 body {
+    background-color: #444;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -34,29 +37,58 @@ nav a {
 
 #cocina {
     /* Estilos para la sección de cocina */
+    border: 2px solid #444;
+    padding: 10px;
+    margin: 10px;
+    background-color: #3773a5;
+}
+#cocina.img{
+    max-width: 100;/*hace que la imagen sea responsive max-width: 100%*/
+    height: 200px;/*mantener la proporción*/
+    margin-bottom: 30px;/*añade una margen inferrior entre la imagen y el texto*/
 }
 
-#bano {
+#baño {
     /* Estilos para la sección de baño */
+    border: 2px solid #444;
+    padding: 10px;
+    margin: 10px;
+    background-color: #505355;
 }
 
 #camas {
     /* Estilos para la sección de camas */
+    border: 2px solid #444;
+    padding: 10px;
+    margin: 10px;
+    background-color: #6b8828;
 }
 
 #muebles {
     /* Estilos para la sección de muebles */
+    border: 2px solid #444;
+    padding: 10px;
+    margin: 10px;
+    background-color: #3773a5;
 }
 
 #iluminacion {
     /* Estilos para la sección de iluminación */
+    border: 2px solid #444;
+    padding: 10px;
+    margin: 10px;
+    background-color: #505355;
 }
 
 #contactenos {
     /* Estilos para la sección de contáctenos */
+    border: 2px solid #444;
+    padding: 10px;
+    margin: 10px;
+    background-color: #6b8828;
 }
 
-#empresa {
+#menu {
     /* Estilos para la sección de empresa */
 }
 
